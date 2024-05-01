@@ -1,0 +1,266 @@
+body {
+    padding-bottom: 20px;
+    /* background-color: #0f111a; */
+    /* background-color: #30363b; */
+    background: #1B213B;
+    color: #777;
+    /* font-family: 'Nunito Sans 7pt SemiCondensed Normal' !important; */
+}
+
+
+
+.scrollbar::-webkit-scrollbar-track,.scrollbar-table::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+    background: #f5f5f5;
+}
+.scrollbar-table::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+    background: #f5f5f5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb,.scrollbar-table::-webkit-scrollbar-thumb {
+    background: rgb(104, 103, 103);
+}
+
+.body-text {
+    color: #697dbd;
+}
+
+.navbar,
+.offcanvas-body,
+.offcanvas-header {
+    background-color: #060d26;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+nav ol.breadcrumb li+li::before {
+    color: #6c757d !important;
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.offcanvas.offcanvas-start {
+    width: max-content;
+}
+
+.collapse-div-item {
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+.collapse-div-item:hover {
+    color: rgb(26, 73, 175);
+}
+
+.collapse-div-item::after {
+    background-color: white;
+    content: "";
+    height: .725rem;
+    left: -15px;
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: .0625rem;
+}
+
+.admin-card {
+    position: relative;
+    overflow: hidden;
+    /* From https://css.glass */
+    /* background: rgba(10, 10, 10, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px); */
+    /* background: rgb(60, 60, 62); */
+    /* background: #37404a; */
+    background-color: #262D47;
+}
+
+.admin-card-title {
+    font-size: 12px;
+}
+
+.admin-card-hr {
+    border-top: 1px solid white;
+}
+
+.admin-card-subheading {
+    font-size: 11px;
+}
+
+.chart-secondary-content {
+    background-color: #404954;
+}
+
+.sales-chart {
+    height: 400px;
+}
+
+.product-chart {
+    height: 400px;
+}
+
+.bg-card-secondary-color {
+    background-color: #262D47;
+}
+
+.search-list::placeholder {
+    color: #ccc;
+}
+
+.search-list:focus {
+    border-color: none;
+}
+
+.add-btn {
+    background-color: #fa5c7c;
+    border-color: #fa5c7c;
+}
+
+.add-btn:hover,
+.add-btn:focus {
+    background-color: #e75573;
+}
+
+.export-btn {
+    background-color: #0acf97;
+    border-color: #0acf97;
+}
+
+.export-btn:hover,
+.export-btn:focus {
+    background-color: #09bf8c;
+}
+
+.action-icon {
+    font-size: 18px;
+}
+
+.blocked-state-badge {
+    background-color: rgb(250, 92, 124, 0.15);
+}
+
+.active-state-badge {
+    background-color: rgb(10, 207, 151, 0.15);
+}
+
+.active-inv::before {
+    content: "";
+    position: absolute;
+    width: .75rem;
+    height: .75rem;
+    top: 10px;
+    right: -6px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #1B213B;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #efefef;
+}
+
+/*Products Image Add Css*/
+.custom-file-size {
+    width: 300px;
+    height: 50px;
+    position: relative;
+}
+
+.custom-file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.image-preview {
+    margin-top: 10px;
+    display: none;
+}

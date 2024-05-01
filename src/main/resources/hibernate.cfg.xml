@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/newtech_db?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">****</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!--            ////////////////////////////-->
+        <!--            Mappings                -->
+
+        <mapping class="com.newtech.model.User"/>
+        <mapping class="com.newtech.model.Category"/>
+        <mapping class="com.newtech.model.Brand"/>
+        <mapping class="com.newtech.model.SubCategory"/>
+        <mapping class="com.newtech.model.TechnicalSpecification"/>
+        <mapping class="com.newtech.model.SubCategoryTechnicalSpecification"/>
+        <mapping class="com.newtech.model.SubCategoryBrand"/>
+        <mapping class="com.newtech.model.ProductStatus"/>
+        <mapping class="com.newtech.model.ProductColor"/>
+        <mapping class="com.newtech.model.Product"/>
+        <mapping class="com.newtech.model.ProductImage"/>
+
+    </session-factory>
+
+</hibernate-configuration>
